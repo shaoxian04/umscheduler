@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js" integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <h1>Scheduler</h1>
+    <div id="inputContainer">
+        <input type="file" accept=".csv" id="inputFile">
+        <button id="submit" onclick="readCSV()">Submit</button>
+    </div>
+    
+    <table id="timetable">
+        <th></th>
+        <th>08:00-09:00</th>
+        <th>09:00-10:00</th>
+        <th>10:00-11:00</th>
+        <th>11:00-12:00</th>
+        <th>12:00-13:00</th>
+        <th>13:00-14:00</th>
+        <th>14:00-15:00</th>
+        <th>15:00-16:00</th>
+        <th>16:00-17:00</th>
+        <th>17:00-18:00</th>
+        <th>18:00-19:00</th>
+        <tr id="Mondayrow">
+            <th>Monday</th>
+            <td class="Monday"></td>
+            <td class="Monday"></td>
+            <td class="Monday"></td>
+            <td class="Monday"></td>
+            <td class="Monday"></td>
+            <td class="Monday"></td>
+            <td class="Monday"></td>
+            <td class="Monday"></td>
+            <td class="Monday"></td>
+            <td class="Monday"></td>
+            <td class="Monday"></td>
+        </tr>
+        <tr id="Tuesdayrow">
+            <th>Tuesday</th>
+            <td class="Tuesday"></td>
+            <td class="Tuesday"></td>
+            <td class="Tuesday"></td>
+            <td class="Tuesday"></td>
+            <td class="Tuesday"></td>
+            <td class="Tuesday"></td>
+            <td class="Tuesday"></td>
+            <td class="Tuesday"></td>
+            <td class="Tuesday"></td>
+            <td class="Tuesday"></td>
+            <td class="Tuesday"></td>
+        </tr>
+        <tr id="Wednesdayrow">
+            <th>Wednesday</th>
+            <td class="Wednesday"></td>
+            <td class="Wednesday"></td>
+            <td class="Wednesday"></td>
+            <td class="Wednesday"></td>
+            <td class="Wednesday"></td>
+            <td class="Wednesday"></td>
+            <td class="Wednesday"></td>
+            <td class="Wednesday"></td>
+            <td class="Wednesday"></td>
+            <td class="Wednesday"></td>
+            <td class="Wednesday"></td>
+        </tr>
+        <tr id="Thursdayrow">
+            <th>Thursday</th>
+            <td class="Thursday"></td>
+            <td class="Thursday"></td>
+            <td class="Thursday"></td>
+            <td class="Thursday"></td>
+            <td class="Thursday"></td>
+            <td class="Thursday"></td>
+            <td class="Thursday"></td>
+            <td class="Thursday"></td>
+            <td class="Thursday"></td>
+            <td class="Thursday"></td>
+            <td class="Thursday"></td>
+        </tr>
+        <tr id="Fridayrow">
+            <th>Friday</th>
+            <td class="Friday"></td>
+            <td class="Friday"></td>
+            <td class="Friday"></td>
+            <td class="Friday"></td>
+            <td class="Friday"></td>
+            <td class="Friday"></td>
+            <td class="Friday"></td>
+            <td class="Friday"></td>
+            <td class="Friday"></td>
+            <td class="Friday"></td>
+            <td class="Friday"></td>
+        </tr>
+    </table>
+    <button id="downloadBtn" onclick="generateImage()">Download as png</button>
+    <script src="index.js"></script>
+</body>
+</html>

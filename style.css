@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFAD60;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    margin: 1.5rem;
+    font-size: 4rem;
+    font-family: monospace;
+}
+#inputContainer{
+    background-color: #FFEEAD;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 30px;
+    margin-bottom: 1.5rem;
+}
+#inputFile{
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    border: none;
+    text-align: left;
+    padding: 1.5rem;
+    position: relative;
+    left: 100px;
+    margin-bottom: 0.5rem;
+}
+button{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #A66E38;
+}
+button:hover{
+    background-color: hsl(29, 50%, 70%);
+    transform: scale(1.2);
+}
+table{
+    margin: auto;
+    background-color: hsl(0, 0%, 70%);
+}
+th{
+    background-color:#A66E38;
+    padding: 10px;
+    min-width: 110px;
+    color: #FFEEAD;
+    border: hsl(0, 0%, 70%) 0.2px solid;
+    z-index: 2;
+}
+td{
+    max-width: 110px;
+    border: hsl(0, 0%, 70%) 0.2px solid;
+    z-index: 2;
+    background-color:#A66E38;
+}
+.tutorial{
+    
+    margin: 5px;
+    background-color: #96CEB4;
+    border-radius: 15px;
+    padding: 5px;
+    color:black;
+    min-height: 120px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    z-index: 1;
+}
+.lecture{
+    
+    margin: 5px;
+    background-color:rgb(49, 241, 49);
+    border-radius: 15px;
+    padding: 5px;
+    color: black;
+    min-height: 120px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    margin-top: 5px !important;
+    position: relative;
+    z-index: 1;
+}
+#test{
+    height: 120px;
+}
+#downloadBtn{
+    margin: 1.5rem;
+}
+
